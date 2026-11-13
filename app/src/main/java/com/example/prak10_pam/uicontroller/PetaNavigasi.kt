@@ -20,7 +20,7 @@ import com.example.prak10_pam.view.EntrySiswaScreen
 import com.example.prak10_pam.view.HomeScreen
 
 @Composable
-fun SiswaApp(navController: NavHostController = rememberNavController()) {
+fun SiswaApp(navController: NavHostController = rememberNavController(), modifier: Modifier) {
     HostNavigasi(navController = navController)
 }
 
