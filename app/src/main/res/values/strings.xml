@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">prak10_PAM</string>
+    <string name="entry_siswa">Tambah Siswa</string>
+
 </resources>
