@@ -34,7 +34,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.prak10_pam.R
 import com.example.prak10_pam.room.Siswa
-import com.example.prak10_pam.uicontroller.DestinasiHome
+import com.example.prak10_pam.view.route.DestinasiHome
 import com.example.prak10_pam.ui.customwidget.SiswaTopAppBar
 import com.example.prak10_pam.viewmodel.HomeViewModel
 import com.example.prak10_pam.viewmodel.PenyediaViewModel

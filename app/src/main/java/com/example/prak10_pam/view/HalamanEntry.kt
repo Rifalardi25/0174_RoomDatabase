@@ -25,7 +25,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.prak10_pam.R
 import com.example.prak10_pam.ui.customwidget.SiswaTopAppBar
-import com.example.prak10_pam.uicontroller.DestinasiEntry
+import com.example.prak10_pam.view.route.DestinasiEntry
 import com.example.prak10_pam.viewmodel.DetailSiswa
 import com.example.prak10_pam.viewmodel.EntryViewModel
 import com.example.prak10_pam.viewmodel.PenyediaViewModel
