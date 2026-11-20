@@ -1,6 +1,9 @@
 package com.example.prak10_pam.view
 
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
@@ -8,6 +11,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.prak10_pam.ui.customwidget.SiswaTopAppBar
 import com.example.prak10_pam.view.route.DestinasiEditSiswa
 import com.example.prak10_pam.viewmodel.EditViewModel
 import com.example.prak10_pam.viewmodel.PenyediaViewModel
@@ -32,7 +36,7 @@ fun EditSiswaScreen(
         modifier = modifier
     ) { innerPadding ->
         val coroutineScope = rememberCoroutineScope()
-        EntrySiswaBody(
+        EntryBody(
             uiStateSiswa = viewModel.uiStateSiswa,
             onSiswaValueChange = viewModel::updateUiState,
             onSaveClick = {
@@ -41,7 +45,10 @@ fun EditSiswaScreen(
                     navigateBack()
                 }
             },
-            modifier = Modifier.padding(innerPadding)
+            modifier = Modifier
+                .padding(innerPadding)
+                .verticalScroll(rememberScrollState())
+                .fillMaxWidth()
         )
     }
 }
