@@ -1,4 +1,4 @@
-package com.example.prak10_pam.uicontroller
+package com.example.prak10_pam.view.route
 
 import com.example.prak10_pam.R
 
