@@ -7,7 +7,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.prak10_pam.repositori.RepositoriSiswa
-import com.example.prak10_pam.view.route.DestinasiDetailSiswa
+import com.example.prak10_pam.view.route.DestinasiEditSiswa
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -20,7 +20,7 @@ class EditViewModel(
     var uiStateSiswa by mutableStateOf(UIStateSiswa())
         private set
 
-    private val idSiswa: Int = checkNotNull(savedStateHandle[DestinasiDetailSiswa.itemIdArg])
+    private val idSiswa: Int = checkNotNull(savedStateHandle[DestinasiEditSiswa.itemIdArg])
 
     init {
         viewModelScope.launch {
@@ -50,5 +50,3 @@ class EditViewModel(
     }
 
 }
-
-
